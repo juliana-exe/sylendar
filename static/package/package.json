@@ -12,10 +12,10 @@
     "@babel/core": "^7.19.6",
     "@babel/preset-env": "^7.19.4",
     "@rollup/plugin-babel": "^6.0.2",
-    "@rollup/plugin-terser": "^0.4.0",
+    "@rollup/plugin-terser": "^1.0.0",
     "@sweetalert2/eslint-config": "^1.0.11",
     "@sweetalert2/stylelint-config": "^3.0.0",
-    "cypress": "^13.0.0",
+    "cypress": "^15.21.1",
     "eslint": "^8.24.0",
     "eslint-plugin-cypress": "^3.0.0",
     "eslint-plugin-jsdoc": "^48.0.0",
@@ -27,11 +27,14 @@
     "sass": "^1.55.0",
     "stylelint": "^16.0.0",
     "typescript": "4.7.4",
-    "vite": "^5.0.0",
+    "vite": "^6.4.4",
     "zx": "^8.0.0"
   },
   "devDependenciesComments": {
     "typescript": "Do not upgrade TS, tests will verify that types work with the very first version of TS >= 4.0"
+  },
+  "overrides": {
+    "qs": "^6.16.1"
   },
   "files": [
     "dist",
