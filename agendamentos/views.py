@@ -178,6 +178,7 @@ def administrador(request):
 
 #################  ------- Funções do Sistema ---------  ###########################
 @transaction.atomic
+@login_required
 def agendar_equipamento(request):
     if request.method == "POST":
         try:
@@ -392,6 +393,7 @@ def equipamentos_disponiveis(request):
 
 
 @transaction.atomic
+@login_required
 def reagendar_agendamento(request, agendamento_id):
     agendamento = get_object_or_404(Agendamento, pk=agendamento_id)
 
